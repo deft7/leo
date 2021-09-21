@@ -1,0 +1,12 @@
+参考网站如下，但是不止这些，这些是主要的部分，接下来说一下心得，首先是时间上面很紧凑，因为之前是没弄过python爬虫
+对于爬虫过程中使用到的一些框架就比较陌生，其次python因为是自学，并没有系统的学习过，就导致有些函数功能
+需要进行百度。最开始是没有一个很好的思路的，这里是去询问了我的老师，然后他给的思路是使用scrapy框架（windows）
+然后我弄了之后，发现很多依赖包都没安装，然后又到网上去搜索爬虫的一些博客，发现linux系统自带了很多爬虫需要的模块
+之后改用linux就好了很多
+1.进度条的显示：https://www.cnblogs.com/wushank/articles/5070792.html
+2.关于爬取这块参考较多：https://www.cnblogs.com/dong-/p/10306046.html
+https://blog.csdn.net/liming89/article/details/109609582
+https://www.cnblogs.com/wumingxiaoyao/p/6183101.html
+https://blog.csdn.net/weixin_34123613/article/details/92283713?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-3.nolandingword2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-3.nolandingword2
+3.有关进程池：https://www.cnblogs.com/nickchen121/p/11130258.html
+https://developer.51cto.com/art/201002/185290.htm
