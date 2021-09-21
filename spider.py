@@ -249,16 +249,14 @@ class threadPool:
 
 
 #主控制程序
-def mainHandler(threadNum, link, deep, key, test):
+def mainHandler(threadNum, link, deep, key):
     event = threading.Event()
     event.clear()
     pool = threadPool(threadNum, event)
     showProgress(pool.getQueue(), deep, event)
     pool.putJob((link, deep), key)
     pool.wait()
-    if test:  # 需要自测模块运行
-        import test
-        test.test(key, dbFile)
+
 
 if __name__ == '__main__':
     rlock = threading.RLock()
@@ -312,4 +310,4 @@ if __name__ == '__main__':
     deep -= 1
     urls = set()  # 防止抓取重复URL
     fileMD5 = set()  # 保存文件的MD5值防止url不同但内容相同的文件重复下载
-    mainHandler(threadNum, url, deep, key, 'test`self' in args)
+    mainHandler(threadNum, url, deep, key)
